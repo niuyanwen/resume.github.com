@@ -1,37 +1,199 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/niuyanwen/resume.github.com/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/niuyanwen/resume.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge">
+	<meta name="keywords" content="web前端个人简历,web前端,html5"/>
+	<meta name="description" content="牛艳文的web前端工程师个人简历"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>web前端工程师个人简历</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="img/icon.ico">
+	<script type="text/javascript">
+		(function () {
+			var size = 640;
+			var change = function () {
+				var width = window.screen.width;
+				var rem = width / size > 1 ? 1 : width / size < 0.5 ? 0.5 : width / size;
+				document.getElementsByTagName("html")[0].style.fontSize = rem * 100 + "px";
+			};
+			change();
+			if (window.addEventListener) {
+				window.addEventListener("resize", function () {
+					change();
+				}, false);
+			} else {
+				window.attachEvent("onresize", function () {
+					change();
+				});
+			}
+		})();
+	</script>
+</head>
+<body>
+<!-- header -->
+<h1 style="position:absolute; top:-1000px; left:-1000px">欢迎来到牛艳文的个人网站，我是一名web前端工程师，这里有我的web前端个人简历，目前掌握的技术，还有作品，以及个人联系方式，欢迎您的访问</h1>
+<header>
+	<div class="row">
+		<h1 class="col-sm-6 col-xs-12 col-md-4"><img src="picture/head-photo.jpg" class="left" style="border:2px solid #369"> <span
+				class="left text-center">个人简历</span></h1>
+		<ul class="col-sm-4 row col-sm-offset-4 hidden-xs hidden-sm">
+			<li class="col-sm-3"><a href="javascript:;" class="active">首页<i class="active"></i></a></li>
+			<li class="col-sm-3"><a href="javascript:;">专业技能<i></i></a></li>
+			<li class="col-sm-3"><a href="javascript:;">我的作品<i></i></a></li>
+			<li class="col-sm-3"><a href="javascript:;">联系我<i></i></a></li>
+		</ul>
+	</div>
+</header>
+<div id="main">
+	<canvas id="ctx"></canvas>
+	<div class="section-main">
+		<!-- home -->
+		<div class="section-slide home">
+			<div class="home-main container">
+				<div class="photo"></div>
+				<div class="text-center">对新鲜的时候充满激情，直到能掌控驾驭它为止
+					<div></div>
+				</div>
+				<p class="text-center">我叫牛艳文</p>
+				<p class="text-center">24岁</p>
+				<p class="text-center">一名前端开发工程师</p>
+			</div>
+		</div>
+		<!-- home end -->
+		<!-- skill -->
+		<div class="section-slide">
+			<div class="skill-main container">
+				<div class="title">
+					<h3 class="text-center">专业技能</h3>
+					<div class="border"></div>
+					<h4 class="text-center">· SKILL ·</h4>
+				</div>
+				<p class="text-center">前端的学习需要持之以恒，热爱并享受代码给你带来的喜悦感</p>
+				<div class="swiper-container" id="skill">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide skill-slide">
+							<dl>
+								<dt class="text-center">HTML</dt>
+								<dd>
+									<p>1.熟练掌握DIV+CSS以及弹性盒和响应式布局</p>
+									<p>2.深刻理解WEB标准</p>
+									<p>3.熟练运用html标签</p>
+									<p>4.掌握html5的新特性</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide skill-slide">
+							<dl>
+								<dt class="text-center">CSS</dt>
+								<dd>
+									<p>1.熟练运用css及css3新属性</p>
+									<p>2.注重浏览器兼容性，熟悉常见的css hack</p>
+									<p>3.掌握bootstrap框架及源码实现</p>
+									<p>4.掌握css预编译器Sass、Less</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide skill-slide">
+							<dl>
+								<dt class="text-center">JS</dt>
+								<dd>
+									<p>1.熟练掌握原生JS面向对象编程、熟悉ES6</p>
+									<p>2.注重JavaScript性能优化</p>
+									<p>3.掌握jQuery、zepto等类库</p>
+									<p>4.掌握MVVM框架angular</p>
+									<p>5.了解react.js</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide skill-slide">
+							<dl>
+								<dt class="text-center">OTHER</dt>
+								<dd>
+									<p>1.正在试坑小程序</p>
+									<p>2.熟悉版本控制工具SVN、Git</p>
+									<p>3.能使用gulp、webpack配置基本的前端开发环境</p>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- skill end-->
+		<!-- demo -->
+		<div class="section-slide container">
+			<div class="demo-main">
+				<div class="title">
+					<h3 class="text-center">我的作品</h3>
+					<div class="border"></div>
+					<h4 class="text-center">· DEMO ·</h4>
+				</div>
+				<div class="swiper-container" id="demo">
+					<div class="swiper-wrapper demo-wrapper">
+						<div class="swiper-slide demo-slide">
+							<img src="picture/demo1.jpg" alt="demo1" class="marBtw">
+							<a href="javascript:;" target="_blank">
+								山西全球蛙官网<div></div><div></div><div></div><div></div>
+							</a>
+						</div>
+						<div class="swiper-slide demo-slide">
+							<img src="picture/demo.jpg" alt="demo3" class="marBtw">
+							<a href="javascript:;" target="_blank">
+								全球蛙（APP）<div></div><div></div><div></div><div></div>
+							</a>
+						</div>
+						<div class="swiper-slide demo-slide">
+							<img src="picture/demo.jpg" alt="demo3" class="marBtw">
+							<a href="javascript:;" target="_blank">
+								全球蛙公众号<div></div><div></div><div></div><div></div>
+							</a>
+						</div>
+						<div class="swiper-slide demo-slide">
+							<img src="picture/demo.jpg" alt="demo4" class="marBtw">
+							<a href="javascript:;" target="_blank">
+								掌沃太原（APP）<div></div><div></div><div></div><div></div>
+							</a>
+						</div>
+						<div class="swiper-slide demo-slide">
+							<img src="picture/demo1.jpg" alt="demo2" class="marBtw">
+							<a href="javascript:;" target="_blank">
+								智慧物业（APP）<div></div><div></div><div></div><div></div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-button-prev hidden-xs"></div>
+					<div class="swiper-button-next hidden-xs"></div>
+				</div>
+			</div>
+		</div>
+		<!-- demo end -->
+		<!-- contact -->
+		<div class="section-slide">
+			<div class="contact-main container">
+				<div class="title">
+					<h3 class="text-center">联系我</h3>
+					<div class="border"></div>
+					<h4 class="text-center">· CONTACT ME ·</h4>
+				</div>
+				<h3 class="text-center">灵感 代码 梦想 未来</h3>
+				<h4 class="text-center"><span>INSPIRATION</span> <span>CODE</span> <span>DREAM</span>
+					<span>FUTURE</span></h4>
+				<p>学习是一个充实愉悦的过程</p>
+				<p>前端更贴近用户这种体验非常美妙</p>
+				<p>热爱一切美好的事物</p>
+				<p>行路有良友，便是捷径</p>
+				<p>带上我吧，一起去看更大的世界</p>
+				<p>电话：18734894669</p>
+				<p>邮箱：18734894669@163.com</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
